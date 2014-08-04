@@ -1,7 +1,6 @@
 #!/bin/bash
 
-CMD=$*
-OUTPUT=$(sudo $CMD)
+sudo $*
 
 if [ ! $? -eq "0" ]
 then
@@ -49,5 +48,3 @@ else
 ░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀
 "
 fi
-
-echo ${OUTPUT}
